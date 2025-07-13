@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "3b91dc33-54d3-402c-aea6-3112d6c60c14",
+		"name": "KPA Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46714689",
+		"_collection_link": "https://maitrishinde.postman.co/workspace/4fee7a7e-d8d0-4fac-89ff-b446400b5d3f/collection/46714689-3b91dc33-54d3-402c-aea6-3112d6c60c14?action=share&source=collection_link&creator=46714689"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/upload",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "l4Q5yOYCX/Hello.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phone_number\": \"7760873976\",\r\n  \"password\": \"to_share@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
